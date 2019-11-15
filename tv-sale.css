@@ -1,0 +1,27 @@
+.navbar .navbar-brand img {
+  background-color: white;
+  height: 20px;
+  width: 20px;
+}
+.navbar li {
+  margin: 0 3vh 0 3vh;
+}
+
+.content {
+  margin-top: 10vh;
+}
+.content .col-2 {
+  margin-top: 10vh;
+}
+.content .category {
+  margin-bottom: 5vh;
+}
+.content .tv-list {
+  display: flex;
+  justify-content: flex-start;
+}
+.content .tv-list .card {
+  margin: 0 3vw 0 3vw;
+}
+
+/*# sourceMappingURL=tv-sale.css.map */

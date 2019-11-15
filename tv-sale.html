@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="tv-sale.css" type="text/css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="img/home-icon.png" alt="Home" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="task1.html">1. Jars Saving</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">2. Inspiring Quotes</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">3. TV Sales<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="zodiac.html">4. Zodiac Characteristics</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="content">
+        <div class="row">
+            <div class="container-fluid col-2">
+                <ul class="list-group">
+                    <li class="list-group-item"><button id="btn1">Samsung</button></li>
+                    <li class="list-group-item"><button id="btn2">Sony</button></li>
+                    <li class="list-group-item">
+                        <button id="btn3">Panasonic</button>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="container-fluid col-10">
+                <div class="category">
+                    <span>Category Title</span>
+                    <button><img src="img/list-icon.png" alt="" /> List</button>
+                    <button><img src="img/grid-icon.png" alt="" /> Grid</button>
+                </div>
+
+                <div class="tv-list">
+                    <div class="card" style="width: 18rem;">
+                        <img id="img1" class="card-img-top"
+                            src="https://salt.tikicdn.com/cache/200x200/ts/product/a2/70/07/d393063d09c8feb3708a9fc6f7770eb7.jpg"
+                            alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 id="title1" class="card-title">
+                                Smart TV Cong 4K Samsung QLED 65 inch...
+                            </h5>
+                            <p id="price1" class="card-text">51.990.000d</p>
+                            <a href="#" class="btn btn-primary">View Details >></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--samsung sony panaonic & list grid tv: category title-->
+    <script language="javascript">
+        var btn1 = document.getElementById("btn1");
+        var btn2 = document.getElementById("btn2");
+        var btn3 = document.getElementById("btn3");
+        var samsung = {
+            url:
+                "https://salt.tikicdn.com/cache/200x200/ts/product/a2/70/07/d393063d09c8feb3708a9fc6f7770eb7.jpg",
+            title: "Smart TV Cong 4K Samsung QLED 65 inch...",
+            price: "50.990.000d"
+        };
+        var sony = {
+            url:
+                "https://salt.tikicdn.com/cache/200x200/ts/product/f6/a8/ab/2c8a7985a2d1f121f82567f5c29a0cf5.jpg",
+            title: "Internet Tivi Sony 40 inch KDL-40W650D -...",
+            price: "10.010.000d"
+        };
+        var panasonic = {
+            url:
+                "https://salt.tikicdn.com/cache/200x200/ts/product/17/57/08/e7a3c699a23cfd9d56bf422888e541bf.jpg",
+            title: "Smart Tivi Panasonic 32 inch HD TH-32FS500V ...",
+            price: "44.220.000d"
+        };
+
+        btn1.onclick = function () {
+            var img = document.getElementById("img1");
+            var title = document.getElementById("title1");
+            var price = document.getElementById("price1");
+            img.src = samsung.url;
+            title.innerHTML = samsung.title;
+            price.innerHTML = samsung.price;
+        };
+
+        btn2.onclick = function () {
+            var img = document.getElementById("img1");
+            var title = document.getElementById("title1");
+            var price = document.getElementById("price1");
+            img.src = sony.url;
+            title.innerHTML = sony.title;
+            price.innerHTML = sony.price;
+        };
+
+        btn3.onclick = function () {
+            var img = document.getElementById("img1");
+            var title = document.getElementById("title1");
+            var price = document.getElementById("price1");
+            img.src = panasonic.url;
+            title.innerHTML = panasonic.title;
+            price.innerHTML = panasonic.price;
+        };
+    </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

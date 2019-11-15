@@ -1,0 +1,38 @@
+.contain, .contain-detail {
+    padding: 0 5%;
+}
+
+.contain .row, header .row, .contain-detail .title {
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+.contain .row h1, .contain-detail .row h1, .contain-detail h3, h5 {
+    font-family: Trebuchet MS, sans-serif;
+}
+
+.contain .row h2 {
+    color: #ff6666;
+    font-family: Harrington, fantasy;
+    font-weight: bold;
+}
+
+.contain .row p, .contain-detail p {
+    color: #666666;
+}
+
+.contain-detail p, h3, h5 {
+    display: inline;
+}
+
+.contain-detail p {
+    font-size: 20px;
+}
+
+.contain-detail h3 {
+    font-size: 40px;
+}
+
+.contain-detail h5 {
+    font-size: 30px;
+}
