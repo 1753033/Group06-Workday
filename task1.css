@@ -9,3 +9,13 @@
 .myCol{
     padding: 30% 30%;
 }
+.myCard{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.myCard .card{
+    height: 320px !important;
+    margin: 10px auto;
+}
