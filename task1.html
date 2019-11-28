@@ -8,7 +8,7 @@
     <body>
         <div class = "container-fluid">
             <nav class="navbar navbar-expand-sm bg-secondary navbar-dark ">
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="index.html">
                             <img src="home.png" class="display" alt="logo">
                     </a>
                     <ul class="navbar-nav">
@@ -23,7 +23,7 @@
                         <a class="nav-link" href="zodiac.html">3.Zodiac Charateristics</a>
                       </li>
                     </ul>
-                  </nav>
+            </nav>
         <div class="row justify-content-center border-bottom">
             <h1 id="header">Jars Saving</h1>
         </div>
@@ -33,59 +33,76 @@
             </div>
             <div class="col">
                     <div class="form-group w-25">
-                    <input type="text" class="form-control" aria-label="yourSalary" style="margin: 5px auto;">
-                    <button type="button" class="btn btn-primary">Calculate</button>
-                    </div>
+                    <input id='number' type="number" class="form-control" aria-label="yourSalary" style="margin: 5px auto;" required>
+                    <button type="button" class="btn btn-primary" onclick="onClick()">Calculate</div>
             </div>
         </div>
+
             <div class="row">
-                <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="./HowtoPayChineseSuppliersbyBankTransferTT.jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 style="text-align: center;" class="card-title">Necessary payment 55%</h5>
-                          <p style="text-align: center;" class="card-text">0$</p>
-                        </div>
-                    </div>
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="./freedomjar.jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 style="text-align: center;" class="card-title">Financial freedom account 10%</h5>
-                          <p style="text-align: center;" class="card-text">0$</p>
-                        </div>
-                </div>
-                    <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="./give-take-pay-donations-.jpg" alt="Card image cap">
-                            <div class="card-body">
-                              <h5 style="text-align: center;" class="card-title">Give account 5%</h5>
-                              <p style="text-align: center;" class="card-text">0$</p>
-                            </div>
-                    </div>
-                <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="./Online-Education-Icons.png" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 style="text-align: center;" class="card-title">Education account 10%</h5>
-                          <p style="text-align: center;" class="card-text">0$</p>
-                        </div>
-                    </div>
-                    <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="./Term_1568225331703.jpg" alt="Card image cap">
-                            <div class="card-body">
-                              <h5 style="text-align: center;" class="card-title">Long-term saving for spending account 10%</h5>
-                              <p style="text-align: center;" class="card-text">0$</p>
-                            </div>
-                        </div>
-                        <div class="card" style="width: 18rem;">
-                                <img class="card-img-top" src="./audience-band-blur-1587927-1280x768.jpg" alt="Card image cap">
-                                <div class="card-body">
-                                  <h5 style="text-align: center;" class="card-title">Play Account</h5>
-                                  <p style="text-align: center;" class="card-text">0$</p>
-                                </div>
-                            </div>
-                        </div>
+              <div class="myCard" style="width: 100vw;">
+                  <div class="card" style="width: 18rem;">
+                      <img class="card-img-top" src="./HowtoPayChineseSuppliersbyBankTransferTT.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 style="text-align: center;" class="card-title">Necessary payment 55%</h5>
+                        <p id="pay" style="text-align: center;" class="card-text">0$</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="myCard" style="width: 100vw;">
+                  <div class="card" style="width: 18rem;">
+                      <img class="card-img-top" src="./freedomjar.jpg" alt="Card image cap">
+                          <div class="card-body">
+                            <h5 style="text-align: center;" class="card-title">Financial freedom account 10%</h5>
+                            <p id="fin" style="text-align: center;" class="card-text">0$</p>
+                          </div>
+                  </div>
+                      <div class="card" style="width: 18rem;">
+                              <img class="card-img-top" src="./give-take-pay-donations-.jpg" alt="Card image cap">
+                              <div class="card-body">
+                                <h5 style="text-align: center;" class="card-title">Give account 5%</h5>
+                                <p id="give" style="text-align: center;" class="card-text">0$</p>
+                              </div>
+                      </div>
+              </div>
+
+              <div class="myCard" style="width: 100vw;">
+                  <div class="card" style="width: 18rem;">
+                      <img class="card-img-top" src="./Online-Education-Icons.png" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 style="text-align: center;" class="card-title">Education account 10%</h5>
+                        <p id="edu" style="text-align: center;" class="card-text">0$</p>
+                      </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                          <img class="card-img-top" src="./Term_1568225331703.jpg" alt="Card image cap">
+                          <div class="card-body">
+                            <h5 style="text-align: center;" class="card-title">Long-term saving for spending account 10%</h5>
+                            <p id="long" style="text-align: center;" class="card-text">0$</p>
+                          </div>
+                      </div>
+                      <div class="card" style="width: 18rem;">
+                              <img class="card-img-top" src="./audience-band-blur-1587927-1280x768.jpg" alt="Card image cap">
+                              <div class="card-body">
+                                <h5 style="text-align: center;" class="card-title">Play Account 10%</h5>
+                                <p id="play" style="text-align: center;" class="card-text">0$</p>
+                              </div>
+                          </div>
+                      </div>
+            </div>
+                        
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script>
+      function onClick(){
+        let number = document.getElementById('number').value;
+        document.getElementById("pay").textContent=Math.round(number*0.55)+"$";
+        document.getElementById("fin").textContent=Math.round(number*0.1)+"$";
+        document.getElementById("give").textContent=Math.round(number*0.05)+"$";
+        document.getElementById("edu").textContent=Math.round(number*0.1)+"$";
+        document.getElementById("long").textContent=Math.round(number*0.1)+"$";
+        document.getElementById("play").textContent=Math.round(number*0.1)+"$";
+      }
     </script>
     </body>
 </html>
